@@ -21,6 +21,21 @@ class Dog extends Animal{
     }
 }
 
+class Cat extends Animal{
+    constructor(name, age, breed){
+        super(name, age);
+        this.breed = 'Parsian';
+    }
+
+    mew(){
+        console.log(`${this.breed} is mewing....`);
+    }
+    
+}
+
+const cat = new Cat("Tom", 5, "Parsian");
+cat.eat();
+cat.mew()
 
 const dog1 = new Dog('Tomi', 5, 'Deshi');
 dog1.eat();
